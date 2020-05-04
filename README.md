@@ -1,6 +1,92 @@
 # Assignment-5
 # Detecting COVID-19 from X-Rays
 
+This repository contains code and results for COVID-19 classification assignment by Deep Learning Spring 2020 course offered at Information Technology University, Lahore, Pakistan. This assignment is only for learning purposes and is not intended to be used for clinical purposes.
+
+# Part-2
+
+Task-1: Without Focal Loss
+
+For both pre-trained networks, I used the following parameters:
+Epochs = 10
+
+optimizer = optim.SGD(vgg16.parameters(), lr=0.001, momentum=0.9)
+
+1.	VGG-16:
+Accuracy of the network on the training images came out to be 90 %.
+Accuracy of the network on the validation images came out to be 92 %.
+
+Confusion matrices for training set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+
+Confusion matrices for validation set in the order Covid-19, Pneumonia, and Normal are shown below:
+ 
+
+Confusion matrices for testing set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+2.	ResNet-18:
+Accuracy of the network on the training images came out to be 90 %.
+Accuracy of the network on the validation images came out to be 92 %.
+
+Confusion matrices for training set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+Confusion matrices for validation set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+Confusion matrices for testing set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+ 
+Task-2: With Focal Loss 
+
+In this task, for both pre-trained networks, I used the following parameters:
+Epochs = 10
+
+optimizer = optim.SGD(vgg16.parameters(), lr=0.001, momentum=0.9)
+
+1.	VGG-16:
+Accuracy of the network on the training images came out to be 92 %.
+Accuracy of the network on the validation images came out to be 94 %.
+
+Confusion matrices for training set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+
+Confusion matrices for validation set in the order Covid-19, Pneumonia, and Normal are shown below:
+ 
+
+Confusion matrices for testing set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+
+2.	ResNet-18:
+Accuracy of the network on the training images came out to be 90 %.
+Accuracy of the network on the validation images came out to be 93 %.
+
+Confusion matrices for training set in the order Covid-19, Pneumonia, and Normal are shown below:
+ 
+
+
+Confusion matrices for validation set in the order Covid-19, Pneumonia, and Normal are shown below:
+ 
+
+Confusion matrices for testing set in the order Covid-19, Pneumonia, and Normal are shown below:
+
+ 
+
+
+# Part-1
+
 # Task-1: Fine-Tuning FC Layers
 For both pre-trained networks, I used the following parameters:
 Epochs = 10
